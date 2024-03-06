@@ -1,0 +1,172 @@
+  /*
+--- 01 Typography System
+
+  ## FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 
+    20 / 24 / 30 / 36 / 44 / 52 / 62 /
+     74 / 86 / 98 
+    
+  ## Font Weight
+  Default: 400
+  Medium: 500
+  Semi-bold: 600
+  Bold: 700
+  
+  ## Letter Spacing
+  0.75px , -0.5px
+
+  ## Line-Height
+    Defalt: 1
+    Large-Text: 1.05
+    medium: 1.2
+    Large: 1.8
+    Small-text / Medium-text: 1.6
+
+
+--- 02 Colors:
+## Colors
+
+### Primary
+
+- Yellow: hsl(47, 88%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 50%)
+- Black: hsl(0, 0%, 7%)
+
+
+--- 05 Shadows
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+   
+--- 06 border-radius
+    Default: 0.9rem
+    medium: 1.1rem
+
+    
+--- 07 White-space
+     SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 
+    48 / 64 / 80 / 96 / 128
+    */
+
+
+/* GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  font-size: 1.6rem;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  
+}
+
+.container{
+  max-width: 47rem;
+  background-color: hsl(0, 0%, 100%);
+  margin: 4.8rem auto;
+  padding: 3.2rem;
+
+  display:flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  border: 2px solid hsl(0, 0%, 7%);
+  border-radius: 2rem;
+  box-shadow: 0.7rem 0.8rem 0 hsl(0, 0%, 7%);
+  transition: all 0.2s;
+}
+
+.container:hover{
+  box-shadow: 1.2rem 1.3rem 0 hsl(0, 0%, 7%);
+}
+
+/* IMAGE */
+.img{
+  width: 100%;
+  border-radius: 1.1rem;
+
+}
+
+/* First Section */
+.first-section{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  font-weight: 600;
+}
+
+.learning{
+  background-color: hsl(47, 88%, 63%);
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+}
+
+/* TEXT Section */
+.main-title{
+  font-size: 3rem;
+  font-weight: 800;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.main-title:hover{
+  color: hsl(47, 88%, 63%);
+}
+
+.text{
+  font-size: 2rem;
+  color: hsl(0, 0%, 50%);
+}
+
+
+/* Person Section */
+.person{
+  display: flex;
+  gap:2.4rem;
+  align-items: center;
+}
+
+.per-photo{
+  border-radius: 50%;
+  width: 4.8rem;
+}
+.name{
+  font-weight: 900;
+}
+
+
+/* Attribution */
+.attribution{
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 50%);
+  text-align: center;
+}
+
+.links:link,
+.links:visited{
+  text-decoration: none;
+  color: hsl(0, 0%, 7%);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.links:hover,
+.links,:active{
+  color: hsl(47, 88%, 63%);
+}
+
+

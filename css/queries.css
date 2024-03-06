@@ -1,0 +1,34 @@
+/* Mobile: 375px */
+@media (max-width: 23.5em) {
+  /* GENERAL */
+  .container{
+    max-width: 34rem;
+    padding:2.4rem;
+    gap: 2rem;
+  }
+  /* First Section */
+  .learning{
+    padding: 0.6rem 1.6rem;
+  }
+  .published{
+    font-size: 1.2rem;
+  }
+  /* TEXT Section */
+  .main-title{
+    font-size: 2.2rem;
+  }
+  .text{
+    font-size: 1.4rem;
+  }
+  /* Person Section */
+  .person{
+    gap:1.8rem;
+  }
+  .per-photo{
+    width: 3.2rem;
+  }
+  /* Attribution */
+  .attribution{
+    font-size: 1rem;
+  }
+}
